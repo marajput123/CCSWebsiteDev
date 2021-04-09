@@ -8,10 +8,19 @@ let theme = createMuiTheme({
   palette: {
     primary: {
       main: "#9FBC95",
-      light: "#eef3ec",
+      light: "#edf2eb",
     },
     secondary: {
       main: "#000000",
+    },
+  },
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 600,
+      md: 960,
+      lg: 1280,
+      xl: 1920,
     },
   },
 });
