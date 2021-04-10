@@ -1,14 +1,16 @@
 import { makeStyles } from "@material-ui/core";
 
 export const titleStyles = makeStyles((theme) => ({
-  titleContainer: {
+  titleContainer: (isMobile) => ({
     position: "relative",
     display: "flex",
     maxHeight: "900px",
     height: "90vh",
-  },
+    justifyContent: isMobile ? "center" : null,
+  }),
   titleTextContainer: (isMobile) => ({
-    padding: isMobile ? "2.5rem 0rem 0rem 1rem" : "7rem 0rem 0rem 7rem",
+    padding: isMobile ? "5.5rem 0rem 0rem 0rem" : "7rem 0rem 0rem 7rem",
+    alignItems: isMobile ? "center" : null,
     display: "flex",
     flexDirection: "column",
     width: "300px",
@@ -24,7 +26,7 @@ export const titleStyles = makeStyles((theme) => ({
   titleImg: {
     position: "absolute",
     top: "75px",
-    right: "-20px",
+    right: "0px",
     [theme.breakpoints.up("lg")]: {
       height: "500px",
     },

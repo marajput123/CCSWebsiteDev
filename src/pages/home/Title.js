@@ -4,16 +4,28 @@ import { titleStyles } from "./styles";
 import homeBackground from "../../static/svg/home_background.svg";
 
 const Title = () => {
-  const isTablet = useMediaQuery("(max-width:800px)");
-  const isMobile = useMediaQuery("(max-width:600px)");
-  const classes = titleStyles(isTablet);
+  const isMobile = useMediaQuery("(max-width:800px)");
+  const classes = titleStyles(isMobile);
 
   return (
     <div className={classes.titleContainer}>
       <div className={classes.titleTextContainer}>
-        <Typography variant="h2">Carolina Clinical Services</Typography>
-        <Typography variant="h5">
-          <span style={{ fontStyle: "italic" }}>
+        <Typography
+          variant="h2"
+          style={{ textAlign: `${isMobile ? "center" : "initial"}` }}
+        >
+          Carolina Clinical Services
+        </Typography>
+        <Typography
+          variant="h5"
+          style={{ textAlign: `${isMobile ? "center" : "initial"}` }}
+        >
+          <span
+            style={{
+              fontStyle: "italic",
+              display: `${isMobile ? "block" : "inline"}`,
+            }}
+          >
             “The art of medicine consists of amusing the patient while nature
             cures the disease.”
           </span>
@@ -31,11 +43,7 @@ const Title = () => {
       </div>
 
       {isMobile ? null : (
-        <img
-          style={isTablet ? { height: "200px", top: "59px" } : null}
-          className={classes.titleImg}
-          src={homeBackground}
-        />
+        <img className={classes.titleImg} src={homeBackground} />
       )}
     </div>
   );

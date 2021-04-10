@@ -20,9 +20,18 @@ const navbarStyles = makeStyles((theme) => ({
   navListItemText: {
     whiteSpace: "nowrap",
   },
+  navSubList: {
+    backgroundColor: "white",
+    boxShadow: " -8px 21px 8px -22px inset",
+  },
   toolbarRoot: {
     display: "flex",
     justifyContent: "space-between",
+  },
+  collapseRoot: {
+    position: "absolute",
+    boxShadow:
+      " 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%), -8px 21px 8px -22px inset",
   },
 }));
 
