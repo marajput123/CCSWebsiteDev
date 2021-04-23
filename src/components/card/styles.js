@@ -102,6 +102,9 @@ export const tooltipStyles = makeStyles(() => ({
     },
     "& div": {
       top: "-10px !important",
+      width: "90px !important",
+      left: "-20px !important",
+      fontSize: "10px !important",
     },
   },
 }));
