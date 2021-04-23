@@ -1,33 +1,34 @@
 import { makeStyles } from "@material-ui/core";
 
 const navbarStyles = makeStyles((theme) => ({
-  logoImg: {
-    width: "200px",
+  logoImg: (isMobile) => ({
+    width: isMobile ? "150px" : "200px",
     paddingLeft: "20px",
-  },
+  }),
   navList: {
     display: "flex",
     padding: "0px 10px 0px 10px",
   },
-  navListItem: (props) => ({
+  navListItem: {
     "&:hover": {
-      boxShadow: "inset 0px -2px 0px 0px #4f604f",
+      boxShadow: "inset 0px -2px 0px -1px #4f604f",
     },
     "&.MuiListItem-root": {
       height: "64px",
     },
-  }),
+  },
   navListItemText: {
     whiteSpace: "nowrap",
   },
   navSubList: {
     backgroundColor: "white",
     boxShadow: " -8px 21px 8px -22px inset",
+    width: "150px",
   },
-  toolbarRoot: {
+  toolbarRoot: (isMobile) => ({
     display: "flex",
-    justifyContent: "space-between",
-  },
+    justifyContent: isMobile ? "normal" : "space-between",
+  }),
   collapseRoot: {
     position: "absolute",
     boxShadow:

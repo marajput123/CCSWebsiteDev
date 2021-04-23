@@ -11,7 +11,7 @@ let theme = createMuiTheme({
       light: "#edf2eb",
     },
     secondary: {
-      main: "#000000",
+      main: "#515151",
     },
   },
   breakpoints: {

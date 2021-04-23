@@ -1,12 +1,14 @@
 .app-root {
   display: flex;
   justify-content: center;
-  background-color: #edf2eb;
 }
 
 .app-container {
-  width: 100%;
   max-width: 1440px;
   min-width: 360px;
-  overflow: hidden;
+}
+
+.services {
+  /* background-color: #edf2eb; */
+  background-color: white;
 }
