@@ -42,7 +42,7 @@ const data = [
       "Vaccinations are key to debilitating the spread and effects of COVID-19 infections. Schedule your vaccination appointment today!",
     features: [
       {
-        text: "18+ adults are eligible",
+        text: "Adults 18+ are eligible",
         tooltip: null,
         info: null,
       },
@@ -75,6 +75,10 @@ const data = [
     link: null,
     image: "BLOOD",
     color: "#FF423D",
+    modal: {
+      title: "Contact us",
+      text: "admin@carolinaclinicals",
+    },
   },
 ];
 
@@ -134,6 +138,7 @@ const Services = () => {
                         priceTag={item.priceTag}
                         image={item.image}
                         color={item.color}
+                        modal={item.modal}
                       />
                     </Grid>
                   </React.Fragment>

@@ -2,16 +2,18 @@ import { makeStyles } from "@material-ui/core/styles";
 
 export const titleStyles = makeStyles((theme) => ({
   titleContainer: {
-    height: "100vh",
-    maxHeight: "1000px",
+    height: "fit-content",
+    // maxHeight: "100vh",
   },
   navBarContainer: {
     height: "50px",
   },
   title_Container: {
     display: "flex",
-    height: "calc(100vh - 50px)",
+    minHeight: "calc(100vh - 50px)",
+    height: "fit-content",
     maxHeight: "900px",
+    // minHeight: "100vh",
     justifyContent: "space-between",
     [theme.breakpoints.down("sm")]: {
       flexDirection: "column",
@@ -41,6 +43,10 @@ export const titleStyles = makeStyles((theme) => ({
   },
   backgroundImage: {
     width: "100%",
+  },
+  logoStyle: {
+    height: "50px",
+    padding: "15px 0px 0px 20px",
   },
 }));
 

@@ -3,7 +3,12 @@ import virus from "../../static/svg/virus.svg";
 import blood from "../../static/svg/blood.svg";
 import dna from "../../static/svg/dna.svg";
 import PriceTag from "./PriceTag";
-import { Check, ArrowForwardIos, ErrorOutline } from "@material-ui/icons/";
+import {
+  Check,
+  ArrowForwardIos,
+  ErrorOutline,
+  Email,
+} from "@material-ui/icons/";
 import {
   Button,
   Paper,
@@ -13,10 +18,15 @@ import {
   Tooltip,
 } from "@material-ui/core";
 import { cardStyles, tooltipStyles } from "./styles";
+import { SmallDialog } from "../dialog";
 
 const Card = (props) => {
   const [openModal, setOpenModal] = useState(false);
   const classes = cardStyles(props);
+
+  const handleClose = () => {
+    setOpenModal(false);
+  };
 
   const renderImage = (image) => {
     if (image == "BLOOD") {
@@ -62,13 +72,17 @@ const Card = (props) => {
       <div className={classes.cardAction}>
         <Button
           href={props.link !== null ? props.link : null}
-          onClick={props.link !== null ? (e) => setOpenModal(true) : null}
+          onClick={(e) => setOpenModal(props.link ? false : true)}
           className={classes.buttonStyle}
           size="large"
         >
           {props.action}
         </Button>
       </div>
+      <SmallDialog isOpen={openModal} handleClose={handleClose}>
+        <Email />
+        {props.modal ? props.modal.text : props.modal}
+      </SmallDialog>
     </Paper>
   );
 };

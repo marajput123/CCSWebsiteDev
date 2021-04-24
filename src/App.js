@@ -14,7 +14,7 @@ const App = () => {
         <ThemeProvider theme={theme}>
           {/* <Navbar /> */}
           <Switch>
-            <Route exact path="/NCSWebsite">
+            <Route exact path="/">
               <div className="app-root services">
                 <div className="app-container">
                   {/* <Home /> */}
