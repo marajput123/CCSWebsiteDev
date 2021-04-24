@@ -5,7 +5,7 @@ import { Typography, useMediaQuery } from "@material-ui/core";
 import { titleStyles } from "./style";
 
 const Title = () => {
-  const isMobile = useMediaQuery("(max-width:600px)");
+  const isMobile = useMediaQuery("(max-width:400px)");
   const classes = titleStyles(isMobile);
 
   return (

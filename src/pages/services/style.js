@@ -3,19 +3,18 @@ import { makeStyles } from "@material-ui/core/styles";
 export const titleStyles = makeStyles((theme) => ({
   titleContainer: {
     height: "fit-content",
-    // maxHeight: "100vh",
   },
   navBarContainer: {
     height: "50px",
   },
   title_Container: {
     display: "flex",
-    minHeight: "calc(100vh - 50px)",
-    height: "fit-content",
-    maxHeight: "900px",
-    // minHeight: "100vh",
+    height: "-webkit-calc(100vh - 85px)",
+    height: "-moz-calc(100vh - 85px)",
+    height: "calc(100vh - 85px)",
+    maxHeight: "1000px",
     justifyContent: "space-between",
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.down("xs")]: {
       flexDirection: "column",
       justifyContent: "normal",
     },
@@ -32,12 +31,15 @@ export const titleStyles = makeStyles((theme) => ({
   },
   textStyles: {
     fontSize: "40px",
+    // [theme.breakpoints.down("xs")]: {
+    //   fontSize: "20px",
+    // },
   },
   backgroundContainer: {
     display: "flex",
     justifyContent: "center",
-    padding: "10px 5px 10px 50px",
-    [theme.breakpoints.down("sm")]: {
+    padding: "10px 5px 10px 100px",
+    [theme.breakpoints.down("xs")]: {
       padding: "10px 2px 10px 5px",
     },
   },
@@ -46,7 +48,10 @@ export const titleStyles = makeStyles((theme) => ({
   },
   logoStyle: {
     height: "50px",
-    padding: "15px 0px 0px 20px",
+  },
+  navBarContainer: {
+    padding: "15px 0px 15px 20px",
+    width: "fit-content",
   },
 }));
 
