@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/NCSWebsiteDev/static/css/main.eb6d6f71.chunk.css",
+    "main.js": "/NCSWebsiteDev/static/js/main.c9976aec.chunk.js",
+    "main.js.map": "/NCSWebsiteDev/static/js/main.c9976aec.chunk.js.map",
+    "runtime-main.js": "/NCSWebsiteDev/static/js/runtime-main.d5d75068.js",
+    "runtime-main.js.map": "/NCSWebsiteDev/static/js/runtime-main.d5d75068.js.map",
+    "static/js/2.9ec263ae.chunk.js": "/NCSWebsiteDev/static/js/2.9ec263ae.chunk.js",
+    "static/js/2.9ec263ae.chunk.js.map": "/NCSWebsiteDev/static/js/2.9ec263ae.chunk.js.map",
+    "index.html": "/NCSWebsiteDev/index.html",
+    "static/css/main.eb6d6f71.chunk.css.map": "/NCSWebsiteDev/static/css/main.eb6d6f71.chunk.css.map",
+    "static/js/2.9ec263ae.chunk.js.LICENSE.txt": "/NCSWebsiteDev/static/js/2.9ec263ae.chunk.js.LICENSE.txt",
+    "static/media/CCSLogo.0a783508.svg": "/NCSWebsiteDev/static/media/CCSLogo.0a783508.svg",
+    "static/media/PriceTag-Cvd.df865768.svg": "/NCSWebsiteDev/static/media/PriceTag-Cvd.df865768.svg",
+    "static/media/PriceTag-Vax.d755b401.svg": "/NCSWebsiteDev/static/media/PriceTag-Vax.d755b401.svg",
+    "static/media/blood.91d60064.svg": "/NCSWebsiteDev/static/media/blood.91d60064.svg",
+    "static/media/dna.27aaf0ed.svg": "/NCSWebsiteDev/static/media/dna.27aaf0ed.svg",
+    "static/media/home_background.bb0493db.svg": "/NCSWebsiteDev/static/media/home_background.bb0493db.svg",
+    "static/media/logo.2ee02c83.svg": "/NCSWebsiteDev/static/media/logo.2ee02c83.svg",
+    "static/media/services_background.3a124fc8.svg": "/NCSWebsiteDev/static/media/services_background.3a124fc8.svg",
+    "static/media/virus.494d673b.svg": "/NCSWebsiteDev/static/media/virus.494d673b.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d5d75068.js",
+    "static/js/2.9ec263ae.chunk.js",
+    "static/css/main.eb6d6f71.chunk.css",
+    "static/js/main.c9976aec.chunk.js"
+  ]
+}
