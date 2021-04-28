@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/CCSWebsiteDev/static/css/main.11f71fc6.chunk.css",
-    "main.js": "/CCSWebsiteDev/static/js/main.15a4dc2b.chunk.js",
-    "main.js.map": "/CCSWebsiteDev/static/js/main.15a4dc2b.chunk.js.map",
+    "main.css": "/CCSWebsiteDev/static/css/main.6f23f338.chunk.css",
+    "main.js": "/CCSWebsiteDev/static/js/main.b07a9cdb.chunk.js",
+    "main.js.map": "/CCSWebsiteDev/static/js/main.b07a9cdb.chunk.js.map",
     "runtime-main.js": "/CCSWebsiteDev/static/js/runtime-main.c7d9e7ba.js",
     "runtime-main.js.map": "/CCSWebsiteDev/static/js/runtime-main.c7d9e7ba.js.map",
-    "static/js/2.36f56db8.chunk.js": "/CCSWebsiteDev/static/js/2.36f56db8.chunk.js",
-    "static/js/2.36f56db8.chunk.js.map": "/CCSWebsiteDev/static/js/2.36f56db8.chunk.js.map",
+    "static/js/2.e596a434.chunk.js": "/CCSWebsiteDev/static/js/2.e596a434.chunk.js",
+    "static/js/2.e596a434.chunk.js.map": "/CCSWebsiteDev/static/js/2.e596a434.chunk.js.map",
     "index.html": "/CCSWebsiteDev/index.html",
-    "static/css/main.11f71fc6.chunk.css.map": "/CCSWebsiteDev/static/css/main.11f71fc6.chunk.css.map",
-    "static/js/2.36f56db8.chunk.js.LICENSE.txt": "/CCSWebsiteDev/static/js/2.36f56db8.chunk.js.LICENSE.txt",
-    "static/media/CCSLogo.0a783508.svg": "/CCSWebsiteDev/static/media/CCSLogo.0a783508.svg",
+    "static/css/main.6f23f338.chunk.css.map": "/CCSWebsiteDev/static/css/main.6f23f338.chunk.css.map",
+    "static/js/2.e596a434.chunk.js.LICENSE.txt": "/CCSWebsiteDev/static/js/2.e596a434.chunk.js.LICENSE.txt",
+    "static/media/CCSLogo.d7be384b.svg": "/CCSWebsiteDev/static/media/CCSLogo.d7be384b.svg",
     "static/media/PriceTag-Cvd.df865768.svg": "/CCSWebsiteDev/static/media/PriceTag-Cvd.df865768.svg",
     "static/media/PriceTag-Vax.d755b401.svg": "/CCSWebsiteDev/static/media/PriceTag-Vax.d755b401.svg",
     "static/media/blood.91d60064.svg": "/CCSWebsiteDev/static/media/blood.91d60064.svg",
     "static/media/dna.27aaf0ed.svg": "/CCSWebsiteDev/static/media/dna.27aaf0ed.svg",
     "static/media/home_background.bb0493db.svg": "/CCSWebsiteDev/static/media/home_background.bb0493db.svg",
-    "static/media/logo.2ee02c83.svg": "/CCSWebsiteDev/static/media/logo.2ee02c83.svg",
     "static/media/services_background.3a124fc8.svg": "/CCSWebsiteDev/static/media/services_background.3a124fc8.svg",
-    "static/media/virus.494d673b.svg": "/CCSWebsiteDev/static/media/virus.494d673b.svg"
+    "static/media/team.cc0c6ff9.svg": "/CCSWebsiteDev/static/media/team.cc0c6ff9.svg",
+    "static/media/virus.d324658f.svg": "/CCSWebsiteDev/static/media/virus.d324658f.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.c7d9e7ba.js",
-    "static/js/2.36f56db8.chunk.js",
-    "static/css/main.11f71fc6.chunk.css",
-    "static/js/main.15a4dc2b.chunk.js"
+    "static/js/2.e596a434.chunk.js",
+    "static/css/main.6f23f338.chunk.css",
+    "static/js/main.b07a9cdb.chunk.js"
   ]
 }
