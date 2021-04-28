@@ -7,14 +7,22 @@ export const Heading = (props) => {
 
   return (
     <>
-      <Typography
-        color="secondary"
-        className={classes.headingStyle}
-        variant="h4"
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          position: "relative",
+        }}
       >
-        {props.text}
+        <Typography
+          color="secondary"
+          className={classes.headingStyle}
+          variant="h4"
+        >
+          {props.text}
+        </Typography>
         <div className={classes.underlineStyle} />
-      </Typography>
+      </div>
     </>
   );
 };

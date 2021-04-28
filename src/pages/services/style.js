@@ -4,36 +4,31 @@ export const titleStyles = makeStyles((theme) => ({
   titleContainer: {
     height: "fit-content",
   },
-  navBarContainer: {
-    height: "50px",
-  },
   title_Container: {
     display: "flex",
-    height: "-webkit-calc(100vh - 85px)",
-    height: "-moz-calc(100vh - 85px)",
-    height: "calc(100vh - 85px)",
+    minHeight: "400px",
+    height: "90vh",
     maxHeight: "1000px",
     justifyContent: "space-between",
     [theme.breakpoints.down("xs")]: {
       flexDirection: "column",
       justifyContent: "normal",
+      maxHeight: "800px",
     },
   },
   textContainer: {
     display: "flex",
     alignItems: "center",
-    paddingLeft: "20px",
+    padding: "20px 0px 30px 20px",
     maxWidth: "fit-content",
     minWidth: "fit-content",
-    [theme.breakpoints.down("sm")]: {
-      flex: "1",
+    [theme.breakpoints.down("xs")]: {
+      height: "100%",
     },
   },
   textStyles: {
+    paddingTop: "35px",
     fontSize: "40px",
-    // [theme.breakpoints.down("xs")]: {
-    //   fontSize: "20px",
-    // },
   },
   backgroundContainer: {
     display: "flex",
@@ -41,6 +36,7 @@ export const titleStyles = makeStyles((theme) => ({
     padding: "10px 5px 10px 100px",
     [theme.breakpoints.down("xs")]: {
       padding: "10px 2px 10px 5px",
+      height: "100vw",
     },
   },
   backgroundImage: {
@@ -51,10 +47,29 @@ export const titleStyles = makeStyles((theme) => ({
   },
   navBarContainer: {
     padding: "15px 0px 15px 20px",
-    width: "fit-content",
+    height: "50px",
   },
 }));
 
 export const serviceStyles = makeStyles(() => ({
-  serviceContainer: {},
+  serviceTitle: {
+    display: "flex",
+    justifyContent: "center",
+    marginBottom: "8rem",
+    marginTop: "4rem",
+  },
+  gridContainer: {
+    display: "flex",
+    alignItems: "center",
+    marginBottom: "100px",
+  },
+  gridRoot: {
+    width: "100%",
+    margin: "0px",
+  },
+  gridStyles: {
+    display: "flex",
+    justifyContent: "center",
+    padding: "12px 12px 30px 12px",
+  },
 }));
