@@ -9,38 +9,25 @@ import {
   ClickAwayListener,
   useMediaQuery,
 } from "@material-ui/core";
+import { useHistory } from "react-router-dom";
+import { tabs } from "../../data";
 import Drawer from "../drawer/NavDrawer";
-import ncsLogo from "../../static/svg/logo.svg";
+import ccsLogo from "../../static/svg/CCSLogo.svg";
 import navbarStyles from "./styles";
-
-//Data
-const data = [
-  { title: "ABOUT", url: "about", subList: [] },
-
-  // {
-  //   title: "PROJECTS",
-  //   url: "projects",
-  //   subList: [
-  //     { title: "Project 1", url: "projects", subList: [] },
-  //     { title: "Project 2", url: "projects", subList: [] },
-  //     { title: "Project 3", url: "projects", subList: [] },
-  //   ],
-  // },
-  {
-    title: "SERVICES",
-    url: "services",
-    subList: [
-      // { title: "Service 1", url: "service", subList: [] },
-      // { title: "Service 2", url: "service", subList: [] },
-    ],
-  },
-  { title: "CONTACT", url: "contact", subList: [] },
-];
 
 //Navbar Menu Component
 const NavbarMenu = () => {
+  const history = useHistory();
   const [currentTab, setCurrentTab] = useState(null);
   const classes = navbarStyles();
+
+  const onCurrentTab = (tab) => {
+    if (tab.subList.length > 0) {
+      setCurrentTab(currentTab === tab.url ? null : tab.url);
+    } else {
+      history.replace(`/${tab.url}`);
+    }
+  };
 
   //Render Navbar subList
   const renderSubList = (subList, parent) => {
@@ -68,13 +55,11 @@ const NavbarMenu = () => {
 
   //Render Navbar List
   const renderNavList = () => {
-    return data.map((item) => {
+    return tabs.map((item) => {
       return (
         <div style={{ position: "relative" }} key={item.title}>
           <ListItem
-            onClick={(e) =>
-              setCurrentTab(currentTab === item.url ? null : item.url)
-            }
+            onClick={(e) => onCurrentTab(item)}
             className={classes.navListItem}
             button
           >
@@ -102,14 +87,24 @@ const NavbarMenu = () => {
 
 //Navbar Component
 const Navbar = (props) => {
+  const history = useHistory();
   const isMobile = useMediaQuery("(max-width:800px)");
   const classes = navbarStyles(isMobile);
+
+  const onClickHome = (e) => {
+    history.replace("/");
+  };
+
   return (
     <div>
       <AppBar color="default">
         <Toolbar className={classes.toolbarRoot}>
           {isMobile ? <Drawer /> : null}
-          <img className={classes.logoImg} src={ncsLogo} />
+          <img
+            className={classes.logoImg}
+            src={ccsLogo}
+            onClick={onClickHome}
+          />
           {isMobile ? null : <NavbarMenu />}
         </Toolbar>
       </AppBar>

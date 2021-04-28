@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import { ThemeProvider } from "@material-ui/core";
 import theme from "./theme";
 import Navbar from "./components/navbar/Navbar";
@@ -12,13 +12,19 @@ const App = () => {
     <div>
       <Router>
         <ThemeProvider theme={theme}>
-          {/* <Navbar /> */}
+          <Navbar />
           <Switch>
-            <Route exact path="/">
+            <Route exact path="/services">
               <div className="app-root services">
                 <div className="app-container">
-                  {/* <Home /> */}
                   <Services />
+                </div>
+              </div>
+            </Route>
+            <Route exact path="/">
+              <div className="app-root home">
+                <div className="app-container">
+                  <Home />
                 </div>
               </div>
             </Route>

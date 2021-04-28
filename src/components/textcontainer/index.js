@@ -7,19 +7,30 @@ export const Heading = (props) => {
 
   return (
     <>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          position: "relative",
-        }}
-      >
+      <div className={classes.textContainer}>
+        <Typography className={classes.headingStyle} variant="h4">
+          {props.heading}
+        </Typography>
+        <div className={classes.underlineStyle} />
+      </div>
+    </>
+  );
+};
+
+export const SubHeading = (props) => {
+  const classes = headingStyles();
+  return (
+    <>
+      <div className={classes.textContainer}>
         <Typography
-          color="secondary"
           className={classes.headingStyle}
+          style={{ paddingBottom: "0px" }}
           variant="h4"
         >
-          {props.text}
+          {props.heading}
+        </Typography>
+        <Typography className={classes.subheadingStyle}>
+          {props.subheading}
         </Typography>
         <div className={classes.underlineStyle} />
       </div>

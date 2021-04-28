@@ -2,8 +2,8 @@ import { makeStyles } from "@material-ui/core";
 
 const navbarStyles = makeStyles((theme) => ({
   logoImg: (isMobile) => ({
-    width: isMobile ? "150px" : "200px",
-    paddingLeft: "20px",
+    width: isMobile ? "80px" : "100px",
+    padding: "7px 0px 7px 20px",
   }),
   navList: {
     display: "flex",

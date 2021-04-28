@@ -1,12 +1,12 @@
 import { makeStyles } from "@material-ui/core/styles";
 
 export const titleStyles = makeStyles((theme) => ({
+  // titleContainer: {
+  //   height: "fit-content",
+  // },
   titleContainer: {
-    height: "fit-content",
-  },
-  title_Container: {
     display: "flex",
-    minHeight: "400px",
+    minHeight: "300px",
     height: "90vh",
     maxHeight: "1000px",
     justifyContent: "space-between",
@@ -55,7 +55,7 @@ export const serviceStyles = makeStyles(() => ({
   serviceTitle: {
     display: "flex",
     justifyContent: "center",
-    marginBottom: "8rem",
+    marginBottom: "4rem",
     marginTop: "4rem",
   },
   gridContainer: {

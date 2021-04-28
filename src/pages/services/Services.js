@@ -14,7 +14,7 @@ const Services = () => {
       <Title />
       <div>
         <div className={classes.serviceTitle}>
-          <Heading text={"Our Services"} />
+          <Heading heading={"Our Services"} />
         </div>
         <div className={classes.gridContainer}>
           <Grid
