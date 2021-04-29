@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/CCSWebsiteDev/static/css/main.6f23f338.chunk.css",
-    "main.js": "/CCSWebsiteDev/static/js/main.b07a9cdb.chunk.js",
-    "main.js.map": "/CCSWebsiteDev/static/js/main.b07a9cdb.chunk.js.map",
+    "main.css": "/CCSWebsiteDev/static/css/main.777f92d7.chunk.css",
+    "main.js": "/CCSWebsiteDev/static/js/main.288cbbf5.chunk.js",
+    "main.js.map": "/CCSWebsiteDev/static/js/main.288cbbf5.chunk.js.map",
     "runtime-main.js": "/CCSWebsiteDev/static/js/runtime-main.c7d9e7ba.js",
     "runtime-main.js.map": "/CCSWebsiteDev/static/js/runtime-main.c7d9e7ba.js.map",
-    "static/js/2.e596a434.chunk.js": "/CCSWebsiteDev/static/js/2.e596a434.chunk.js",
-    "static/js/2.e596a434.chunk.js.map": "/CCSWebsiteDev/static/js/2.e596a434.chunk.js.map",
+    "static/js/2.7fcf5a32.chunk.js": "/CCSWebsiteDev/static/js/2.7fcf5a32.chunk.js",
+    "static/js/2.7fcf5a32.chunk.js.map": "/CCSWebsiteDev/static/js/2.7fcf5a32.chunk.js.map",
     "index.html": "/CCSWebsiteDev/index.html",
-    "static/css/main.6f23f338.chunk.css.map": "/CCSWebsiteDev/static/css/main.6f23f338.chunk.css.map",
-    "static/js/2.e596a434.chunk.js.LICENSE.txt": "/CCSWebsiteDev/static/js/2.e596a434.chunk.js.LICENSE.txt",
+    "static/css/main.777f92d7.chunk.css.map": "/CCSWebsiteDev/static/css/main.777f92d7.chunk.css.map",
+    "static/js/2.7fcf5a32.chunk.js.LICENSE.txt": "/CCSWebsiteDev/static/js/2.7fcf5a32.chunk.js.LICENSE.txt",
     "static/media/CCSLogo.d7be384b.svg": "/CCSWebsiteDev/static/media/CCSLogo.d7be384b.svg",
     "static/media/PriceTag-Cvd.df865768.svg": "/CCSWebsiteDev/static/media/PriceTag-Cvd.df865768.svg",
     "static/media/PriceTag-Vax.d755b401.svg": "/CCSWebsiteDev/static/media/PriceTag-Vax.d755b401.svg",
+    "static/media/about_background.4aa0b1b9.svg": "/CCSWebsiteDev/static/media/about_background.4aa0b1b9.svg",
     "static/media/blood.91d60064.svg": "/CCSWebsiteDev/static/media/blood.91d60064.svg",
     "static/media/dna.27aaf0ed.svg": "/CCSWebsiteDev/static/media/dna.27aaf0ed.svg",
     "static/media/home_background.bb0493db.svg": "/CCSWebsiteDev/static/media/home_background.bb0493db.svg",
@@ -22,8 +23,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.c7d9e7ba.js",
-    "static/js/2.e596a434.chunk.js",
-    "static/css/main.6f23f338.chunk.css",
-    "static/js/main.b07a9cdb.chunk.js"
+    "static/js/2.7fcf5a32.chunk.js",
+    "static/css/main.777f92d7.chunk.css",
+    "static/js/main.288cbbf5.chunk.js"
   ]
 }
