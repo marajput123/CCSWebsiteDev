@@ -20,5 +20,6 @@ export const headingStyles = makeStyles(() => ({
   },
   subheadingStyle: {
     padding: "0px 10px 10px 10px",
+    textAlign: "center",
   },
 }));

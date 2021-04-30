@@ -6,11 +6,15 @@
 .app-container {
   width: 100vw;
   max-width: 1440px;
-  min-width: 360px;
+  min-width: 340px;
 }
 
 .services {
   background-color: white;
+}
+
+.about {
+  background-color: #4f604f;
 }
 
 .home {

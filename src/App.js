@@ -2,10 +2,11 @@ import React from "react";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import { ThemeProvider } from "@material-ui/core";
 import theme from "./theme";
-import Navbar from "./components/navbar/Navbar";
 import Home from "./pages/home/Home";
-import "./app.css";
 import Services from "./pages/services/Services";
+import About from "./pages/about/About";
+import Navbar from "./components/navbar/Navbar";
+import "./app.css";
 
 const App = () => {
   return (
@@ -25,6 +26,13 @@ const App = () => {
               <div className="app-root home">
                 <div className="app-container">
                   <Home />
+                </div>
+              </div>
+            </Route>
+            <Route exact path="/about">
+              <div className="app-root about">
+                <div className="app-container">
+                  <About />
                 </div>
               </div>
             </Route>

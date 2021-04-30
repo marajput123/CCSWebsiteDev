@@ -1,34 +1,5 @@
 export const services = [
   {
-    title: "COVID-19 Testing",
-    subtitle: "PCR&Rapids",
-    summary:
-      "To continue with helping our community overcome the current pandemic, we are now offering SARS COV2 RtPCR and antigen testing.",
-    features: [
-      {
-        text: "Rapid antigen testing results within 45 minutes",
-        tooltip: "100% Specificity & 88.4% Sensitivity",
-        info: null,
-      },
-      {
-        text: "PCR results within 48-72 hours",
-        tooltip: null,
-        info: null,
-      },
-      {
-        text:
-          "Check if your travel destination accepts rapid antigen test results",
-        tooltip: null,
-        info: true,
-      },
-    ],
-    priceTag: "COVID",
-    action: "Make a appointment",
-    link: "http://expresstestnc.as.me",
-    image: "VIRUS",
-    color: "#41A814",
-  },
-  {
     title: "Vaccinations",
     subtitle: null,
     summary:
@@ -56,6 +27,35 @@ export const services = [
       "https://patientportal.advancedmd.com/147482/onlinescheduling/existing",
     image: "DNA",
     color: "#FFB655",
+  },
+  {
+    title: "COVID-19 Testing",
+    subtitle: "PCR&Rapids",
+    summary:
+      "To continue with helping our community overcome the current pandemic, we are now offering SARS COV2 RtPCR and antigen testing.",
+    features: [
+      {
+        text: "Rapid antigen testing results within 45 minutes",
+        tooltip: "100% Specificity & 88.4% Sensitivity",
+        info: null,
+      },
+      {
+        text: "PCR results within 48-72 hours",
+        tooltip: null,
+        info: null,
+      },
+      {
+        text:
+          "Check if your travel destination accepts rapid antigen test results",
+        tooltip: null,
+        info: true,
+      },
+    ],
+    priceTag: "COVID",
+    action: "Make a appointment",
+    link: "http://expresstestnc.as.me",
+    image: "VIRUS",
+    color: "#41A814",
   },
   {
     title: "Corporate Services",
