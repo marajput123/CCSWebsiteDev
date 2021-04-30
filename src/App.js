@@ -7,6 +7,7 @@ import Services from "./pages/services/Services";
 import About from "./pages/about/About";
 import Navbar from "./components/navbar/Navbar";
 import "./app.css";
+import Contact from "./pages/contact/Contact";
 
 const App = () => {
   return (
@@ -33,6 +34,13 @@ const App = () => {
               <div className="app-root about">
                 <div className="app-container">
                   <About />
+                </div>
+              </div>
+            </Route>
+            <Route exact path="/contact">
+              <div className="app-root">
+                <div className="app-container">
+                  <Contact />
                 </div>
               </div>
             </Route>

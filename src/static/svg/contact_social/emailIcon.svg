@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30.193" viewBox="0 0 30 30.193">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #414141;
+      }
+    </style>
+  </defs>
+  <path id="emailIcon" class="cls-1" d="M15,.02a15.1,15.1,0,1,0,15,15.1A15.049,15.049,0,0,0,15,.02ZM23.738,8.8,15,15.929,6.261,8.8H23.738Zm.013,12.58H6.25v-10.7L15,17.819l8.75-7.136Z" transform="translate(0 -0.02)"/>
+</svg>
