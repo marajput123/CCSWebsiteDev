@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/CCSWebsiteDev/static/css/main.eb6d6f71.chunk.css",
-    "main.js": "/CCSWebsiteDev/static/js/main.6092db56.chunk.js",
-    "main.js.map": "/CCSWebsiteDev/static/js/main.6092db56.chunk.js.map",
+    "main.js": "/CCSWebsiteDev/static/js/main.8312583e.chunk.js",
+    "main.js.map": "/CCSWebsiteDev/static/js/main.8312583e.chunk.js.map",
     "runtime-main.js": "/CCSWebsiteDev/static/js/runtime-main.fc46167e.js",
     "runtime-main.js.map": "/CCSWebsiteDev/static/js/runtime-main.fc46167e.js.map",
-    "static/js/2.8210ca56.chunk.js": "/CCSWebsiteDev/static/js/2.8210ca56.chunk.js",
-    "static/js/2.8210ca56.chunk.js.map": "/CCSWebsiteDev/static/js/2.8210ca56.chunk.js.map",
+    "static/js/2.f5ffb0eb.chunk.js": "/CCSWebsiteDev/static/js/2.f5ffb0eb.chunk.js",
+    "static/js/2.f5ffb0eb.chunk.js.map": "/CCSWebsiteDev/static/js/2.f5ffb0eb.chunk.js.map",
     "index.html": "/CCSWebsiteDev/index.html",
     "static/css/main.eb6d6f71.chunk.css.map": "/CCSWebsiteDev/static/css/main.eb6d6f71.chunk.css.map",
-    "static/js/2.8210ca56.chunk.js.LICENSE.txt": "/CCSWebsiteDev/static/js/2.8210ca56.chunk.js.LICENSE.txt",
+    "static/js/2.f5ffb0eb.chunk.js.LICENSE.txt": "/CCSWebsiteDev/static/js/2.f5ffb0eb.chunk.js.LICENSE.txt",
     "static/media/CCSLogo.e411376b.svg": "/CCSWebsiteDev/static/media/CCSLogo.e411376b.svg",
     "static/media/PriceTag-Cvd.df865768.svg": "/CCSWebsiteDev/static/media/PriceTag-Cvd.df865768.svg",
     "static/media/PriceTag-Vax.d755b401.svg": "/CCSWebsiteDev/static/media/PriceTag-Vax.d755b401.svg",
@@ -22,8 +22,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.fc46167e.js",
-    "static/js/2.8210ca56.chunk.js",
+    "static/js/2.f5ffb0eb.chunk.js",
     "static/css/main.eb6d6f71.chunk.css",
-    "static/js/main.6092db56.chunk.js"
+    "static/js/main.8312583e.chunk.js"
   ]
 }
