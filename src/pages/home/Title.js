@@ -12,10 +12,7 @@ const Title = () => {
       <div className={classes.titleTextContainer}>
         <Typography
           variant="h2"
-          style={{
-            textAlign: `${isMobile ? "center" : "initial"}`,
-            fontWeight: "400",
-          }}
+          style={{ textAlign: `${isMobile ? "center" : "initial"}` }}
         >
           Carolina Clinical Services
         </Typography>

@@ -3,22 +3,17 @@ import virus from "../../static/svg/virus.svg";
 import blood from "../../static/svg/blood.svg";
 import dna from "../../static/svg/dna.svg";
 import PriceTag from "./PriceTag";
-import {
-  Check,
-  ArrowForwardIos,
-  ErrorOutline,
-  Email,
-} from "@material-ui/icons/";
+import { Check, ArrowForwardIos, ErrorOutline } from "@material-ui/icons/";
 import {
   Button,
   Paper,
   Typography,
-  IconButton,
   ClickAwayListener,
   Tooltip,
 } from "@material-ui/core";
 import { cardStyles, tooltipStyles } from "./styles";
-import { SmallDialog } from "../dialog";
+import ContactForm from "../forms/ContactForm";
+// import ContactForm from "../forms/ContactForm";
 
 const Card = (props) => {
   const [openModal, setOpenModal] = useState(false);
@@ -29,9 +24,9 @@ const Card = (props) => {
   };
 
   const renderImage = (image) => {
-    if (image == "BLOOD") {
+    if (image === "BLOOD") {
       return blood;
-    } else if (image == "DNA") {
+    } else if (image === "DNA") {
       return dna;
     }
     return virus;
@@ -47,7 +42,12 @@ const Card = (props) => {
           <Typography variant={"caption"}>{props.subtitle}</Typography>
         </div>
         <div className={classes.cardBody}>
-          <div className={classes.bodyHeading}>
+          <div
+            className={classes.bodyHeading}
+            style={{
+              paddingTop: `${props.features.length === 0 ? "50px" : null}`,
+            }}
+          >
             <Typography>{props.summary}</Typography>
           </div>
           <div className={classes.cardFeatures}>
@@ -79,10 +79,9 @@ const Card = (props) => {
           {props.action}
         </Button>
       </div>
-      <SmallDialog isOpen={openModal} handleClose={handleClose}>
-        <Email />
-        {props.modal ? props.modal.text : props.modal}
-      </SmallDialog>
+      {props.link ? null : (
+        <ContactForm isOpen={openModal} handleClose={handleClose} />
+      )}
     </Paper>
   );
 };

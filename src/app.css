@@ -4,19 +4,11 @@
 }
 
 .app-container {
-  width: 100vw;
   max-width: 1440px;
-  min-width: 340px;
+  min-width: 360px;
 }
 
 .services {
+  /* background-color: #edf2eb; */
   background-color: white;
-}
-
-.about {
-  background-color: #4f604f;
-}
-
-.home {
-  background-color: #edf2eb;
 }

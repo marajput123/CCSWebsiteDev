@@ -1,10 +1,10 @@
 import { makeStyles } from "@material-ui/core/styles";
 
 export const titleStyles = makeStyles((theme) => ({
-  // titleContainer: {
-  //   height: "fit-content",
-  // },
   titleContainer: {
+    height: "fit-content",
+  },
+  title_Container: {
     display: "flex",
     minHeight: "300px",
     height: "90vh",
@@ -43,11 +43,11 @@ export const titleStyles = makeStyles((theme) => ({
     width: "100%",
   },
   logoStyle: {
-    height: "50px",
+    height: "60px",
   },
   navBarContainer: {
-    padding: "15px 0px 15px 20px",
-    height: "50px",
+    padding: "15px 0px 5px 20px",
+    height: "60px",
   },
 }));
 

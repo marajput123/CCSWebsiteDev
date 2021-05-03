@@ -67,12 +67,33 @@ export const homeStyles = makeStyles((theme) => ({
 }));
 
 export const introductionStyles = makeStyles((theme) => ({
-  introContainer: {
+  textContainer: {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
     flexDirection: "column",
-    marginBottom: "8rem",
+    marginTop: "80px",
+  },
+  underlineStyle: {
+    width: "50%",
+    position: "absolute",
+    height: "100%",
+    top: ".5rem",
+    border: "0px 0px 1px 0px solid black",
+    borderBottom: "2px solid #9fbc95",
+  },
+  headingStyle: {
+    fontWeight: "300",
+    position: "relative",
+    display: "flex",
+    justifyContent: "center",
+  },
+  subheadingStyle: {
+    fontWeight: "300",
+    position: "relative",
+    display: "flex",
+    justifyContent: "center",
+    padding: "5px 0px 5px 0px",
   },
   paragraphStyle: {
     padding: "2rem 2rem 0rem 2rem",
