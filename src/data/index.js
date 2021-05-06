@@ -22,7 +22,7 @@ export const services = [
       },
     ],
     priceTag: "VAX",
-    action: "Make a appointment",
+    action: "Make an appointment",
     link:
       "https://patientportal.advancedmd.com/147482/onlinescheduling/existing",
     image: "DNA",
@@ -52,7 +52,7 @@ export const services = [
       },
     ],
     priceTag: "COVID",
-    action: "Make a appointment",
+    action: "Make an appointment",
     link: "http://expresstestnc.as.me",
     image: "VIRUS",
     color: "#41A814",
@@ -73,27 +73,4 @@ export const services = [
       text: "admin@carolinaclinicals",
     },
   },
-];
-
-export const tabs = [
-  { title: "ABOUT", url: "about", subList: [] },
-
-  // {
-  //   title: "PROJECTS",
-  //   url: "projects",
-  //   subList: [
-  //     { title: "Project 1", url: "projects", subList: [] },
-  //     { title: "Project 2", url: "projects", subList: [] },
-  //     { title: "Project 3", url: "projects", subList: [] },
-  //   ],
-  // },
-  {
-    title: "SERVICES",
-    url: "services",
-    subList: [
-      // { title: "Service 1", url: "service", subList: [] },
-      // { title: "Service 2", url: "service", subList: [] },
-    ],
-  },
-  { title: "CONTACT", url: "contact", subList: [] },
 ];

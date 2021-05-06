@@ -15,10 +15,10 @@ const useStyles = makeStyles(() => ({
 const PriceTag = (props) => {
   const classes = useStyles();
   const renderTag = (tag) => {
-    if (tag == "VAX") {
+    if (tag == -"VAX") {
       return vax;
     }
-    if (tag == "COVID") {
+    if (tag === "COVID") {
       return covid;
     }
   };

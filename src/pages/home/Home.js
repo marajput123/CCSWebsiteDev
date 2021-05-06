@@ -10,7 +10,7 @@ const Home = () => {
     <>
       <Title />
       <div className={classes.bodyContainer}>
-        <Paper elevation={5} className={classes.paperContainer}>
+        <Paper elevation={24} className={classes.paperContainer}>
           <Introduction />
         </Paper>
       </div>
