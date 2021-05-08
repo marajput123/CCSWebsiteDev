@@ -9,38 +9,23 @@ import {
   ClickAwayListener,
   useMediaQuery,
 } from "@material-ui/core";
+import { useHistory } from "react-router-dom";
 import Drawer from "../drawer/NavDrawer";
 import ncsLogo from "../../static/svg/logo.svg";
 import navbarStyles from "./styles";
-
-//Data
-const data = [
-  { title: "ABOUT", url: "about", subList: [] },
-
-  // {
-  //   title: "PROJECTS",
-  //   url: "projects",
-  //   subList: [
-  //     { title: "Project 1", url: "projects", subList: [] },
-  //     { title: "Project 2", url: "projects", subList: [] },
-  //     { title: "Project 3", url: "projects", subList: [] },
-  //   ],
-  // },
-  {
-    title: "SERVICES",
-    url: "services",
-    subList: [
-      // { title: "Service 1", url: "service", subList: [] },
-      // { title: "Service 2", url: "service", subList: [] },
-    ],
-  },
-  { title: "CONTACT", url: "contact", subList: [] },
-];
+import { navbar as data } from "../../data";
 
 //Navbar Menu Component
 const NavbarMenu = () => {
+  const history = useHistory();
   const [currentTab, setCurrentTab] = useState(null);
   const classes = navbarStyles();
+
+  const onTabClick = (item) => {
+    if (item.subList.length == 0) {
+      history.replace(item.url);
+    }
+  };
 
   //Render Navbar subList
   const renderSubList = (subList, parent) => {
@@ -72,9 +57,7 @@ const NavbarMenu = () => {
       return (
         <div style={{ position: "relative" }} key={item.title}>
           <ListItem
-            onClick={(e) =>
-              setCurrentTab(currentTab === item.url ? null : item.url)
-            }
+            onClick={(e) => onTabClick(item)}
             className={classes.navListItem}
             button
           >

@@ -4,21 +4,21 @@ import { ThemeProvider } from "@material-ui/core";
 import theme from "./theme";
 import Navbar from "./components/navbar/Navbar";
 import Home from "./pages/home/Home";
-import "./app.css";
 import Contact from "./pages/contact/Contact";
 import Services from "./pages/services/Services";
+import About from "./pages/about/About";
+import "./app.css";
 
 const App = () => {
   return (
     <div>
       <Router>
         <ThemeProvider theme={theme}>
-          {/* <Navbar /> */}
+          <Navbar />
           <Switch>
-            <Route exact path="/CCSWebsiteDev/">
+            <Route exact path="/services">
               <div className="app-root services">
                 <div className="app-container">
-                  {/* <Home /> */}
                   <Services />
                 </div>
               </div>
@@ -38,7 +38,7 @@ const App = () => {
               </div>
             </Route>
             <Route exact path="/contact">
-              <div className="app-root">
+              <div className="app-root home">
                 <div className="app-container">
                   <Contact />
                 </div>

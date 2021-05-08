@@ -10,13 +10,13 @@ const Title = () => {
 
   return (
     <div className={classes.titleContainer}>
-      <div className={classes.navBarContainer}>
+      {/* <div className={classes.navBarContainer}>
         <img
           src={ccsLogo}
           className={classes.logoStyle}
           alt="Could not load image :("
         />
-      </div>
+      </div> */}
       <div className={classes.title_Container}>
         <div className={classes.textContainer}>
           <Typography

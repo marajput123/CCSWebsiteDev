@@ -74,3 +74,26 @@ export const services = [
     },
   },
 ];
+
+export const navbar = [
+  { title: "ABOUT", url: "about", subList: [] },
+
+  // {
+  //   title: "PROJECTS",
+  //   url: "projects",
+  //   subList: [
+  //     { title: "Project 1", url: "projects", subList: [] },
+  //     { title: "Project 2", url: "projects", subList: [] },
+  //     { title: "Project 3", url: "projects", subList: [] },
+  //   ],
+  // },
+  {
+    title: "SERVICES",
+    url: "services",
+    subList: [
+      // { title: "Service 1", url: "service", subList: [] },
+      // { title: "Service 2", url: "service", subList: [] },
+    ],
+  },
+  { title: "CONTACT", url: "contact", subList: [] },
+];
