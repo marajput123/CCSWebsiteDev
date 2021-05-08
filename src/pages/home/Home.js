@@ -8,7 +8,7 @@ const Home = () => {
   const classes = homeStyles();
   return (
     <>
-      <Title />
+      {/* <Title /> */}
       <div className={classes.bodyContainer}>
         <Paper elevation={24} className={classes.paperContainer}>
           <Introduction />
