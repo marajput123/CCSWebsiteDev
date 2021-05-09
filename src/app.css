@@ -1,3 +1,7 @@
+html {
+  min-width: 360px;
+}
+
 .app-root {
   display: flex;
   justify-content: center;
@@ -6,6 +10,7 @@
 .app-container {
   max-width: 1440px;
   min-width: 360px;
+  width: 100%;
 }
 
 .services {

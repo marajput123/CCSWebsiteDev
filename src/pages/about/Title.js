@@ -18,7 +18,7 @@ export const Title = () => {
           <Typography variant="h5">Our Team.</Typography>
         </div>
       </div>
-      <div style={{ width: "100%" }}>
+      <div style={{ width: "100%", height: "100%" }}>
         <img src={aboutBackground} className={classes.titleImg} />
       </div>
     </div>

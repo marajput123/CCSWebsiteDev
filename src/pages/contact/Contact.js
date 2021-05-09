@@ -9,11 +9,16 @@ import {
   Phone,
   LocationOn,
 } from "@material-ui/icons";
+import Home from "../home/Home";
 
 const Contact = () => {
   return (
     <>
-      <Paper>hello</Paper>
+      <Paper>
+        <Grid container>
+          <Typography>Hello</Typography>
+        </Grid>
+      </Paper>
     </>
   );
 };

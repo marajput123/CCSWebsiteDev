@@ -28,6 +28,7 @@ export const titleStyles = makeStyles((theme) => ({
     width: "100%",
     right: "0px",
     top: "20px",
+    height: "100%",
   },
 }));
 
