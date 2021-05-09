@@ -38,7 +38,7 @@ const App = () => {
               </div>
             </Route>
             <Route exact path="/contact">
-              <div className="app-root home">
+              <div className="app-root">
                 <div className="app-container">
                   <Contact />
                 </div>

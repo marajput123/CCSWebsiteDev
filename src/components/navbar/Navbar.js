@@ -11,7 +11,7 @@ import {
 } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
 import Drawer from "../drawer/NavDrawer";
-import ncsLogo from "../../static/svg/logo.svg";
+import ncsLogo from "../../static/svg/CCSLogo.svg";
 import navbarStyles from "./styles";
 import { navbar as data } from "../../data";
 
@@ -87,12 +87,20 @@ const NavbarMenu = () => {
 const Navbar = (props) => {
   const isMobile = useMediaQuery("(max-width:800px)");
   const classes = navbarStyles(isMobile);
+  const history = useHistory();
+  const onHomeClick = () => {
+    history.replace("/");
+  };
   return (
     <div>
       <AppBar color="default">
         <Toolbar className={classes.toolbarRoot}>
           {isMobile ? <Drawer /> : null}
-          <img className={classes.logoImg} src={ncsLogo} />
+          <img
+            className={classes.logoImg}
+            src={ncsLogo}
+            onClick={onHomeClick}
+          />
           {isMobile ? null : <NavbarMenu />}
         </Toolbar>
       </AppBar>

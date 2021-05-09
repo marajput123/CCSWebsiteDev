@@ -24,12 +24,18 @@ export const SubHeading = (props) => {
       <div className={classes.textContainer}>
         <Typography
           className={classes.headingStyle}
-          style={{ paddingBottom: "0px" }}
+          style={{
+            paddingBottom: "0px",
+            fontWeight: `${props.weight ? props.weight : null}`,
+          }}
           variant="h4"
         >
           {props.heading}
         </Typography>
-        <Typography className={classes.subheadingStyle}>
+        <Typography
+          style={{ fontWeight: `${props.subWeight ? props.subWeight : null}` }}
+          className={classes.subheadingStyle}
+        >
           {props.subheading}
         </Typography>
         <div className={classes.underlineStyle} />

@@ -9,38 +9,20 @@ import {
   Collapse,
   ListItemIcon,
 } from "@material-ui/core";
+import { useHistory } from "react-router-dom";
 import { drawerStyles } from "./styles";
 import { MenuRounded, Close, ExpandLess, ExpandMore } from "@material-ui/icons";
-import logoSvg from "../../static/svg/logo.svg";
-
-const data = [
-  { title: "ABOUT", url: "about", subList: [] },
-
-  {
-    title: "PROJECTS",
-    url: "projects",
-    subList: [
-      { title: "Project 1", url: "projects", subList: [] },
-      { title: "Project 2", url: "projects", subList: [] },
-      { title: "Project 3", url: "projects", subList: [] },
-    ],
-  },
-  {
-    title: "SERVICES",
-    url: "services",
-    subList: [
-      { title: "Service 1", url: "service", subList: [] },
-      { title: "Service 2", url: "service", subList: [] },
-    ],
-  },
-  { title: "CONTACT", url: "contact", subList: [] },
-];
+import logoSvg from "../../static/svg/CCSLogo.svg";
+import { navbar as data } from "../../data";
 
 const DrawerList = () => {
+  const history = useHistory();
   const classes = drawerStyles();
   const [currentTab, setCurrentTab] = useState(null);
 
-  const onHandleRoute = (url) => {};
+  const onHandleRoute = (url) => {
+    history.replace(url);
+  };
 
   const onHandleTab = (tab) => {
     setCurrentTab(currentTab === tab ? null : tab);
@@ -75,7 +57,9 @@ const DrawerList = () => {
           <ListItem
             button
             onClick={(e) =>
-              item.subList.length > 0 ? onHandleTab(item.url) : onHandleRoute()
+              item.subList.length > 0
+                ? onHandleTab(item.url)
+                : onHandleRoute(item.url)
             }
           >
             <ListItemText primary={item.title} />
